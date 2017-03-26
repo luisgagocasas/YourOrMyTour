@@ -35,7 +35,7 @@ gulp.task('setWatch', function() {
 gulp.task('stylus', function(){
   gulp.src('stylus/index.styl')
   .pipe(stylus({
-    compress: true,
+    compress: false,
     linenos: false,
     use: nib()
   }))

@@ -1,4 +1,4 @@
-@css {/*  CSS3 Clases - Luis Gago */}
+@css {/*  CSS3 Clases - Alejandro Vilchez */}
 @import 'nib/vendor'
 @import 'nib/gradients'
 @import 'nib/overflow'
@@ -83,14 +83,145 @@ opacity(n)
   margin 0
 //@import 'fonts'
 body
-  font-size: 16px
+    font-size: 16px
+    background-image: url(http://www.convencionminera.com/perumin32/images/notas_de_prensa/perumin-ndp72.jpg)
+    background-position: center center
+    background-repeat:  no-repeat
+    background-attachment: fixed
+    background-size:  cover
+    background-color: #999
 //Estructura
 .page
     width: 1000px
     margin: auto
-    background: #333
-    color #FFF
+    color #333
+    border-left: 1px solid #bbb
+    border-right: 1px solid #bbb
+.contenido
+    background: white
+    box-shadow: 0px 10px 20px 0px black
 h1
   color #333
+.cabecera
+    flexbox()
+    background: cornflowerblue
+    padding-top: 30px
+    padding-bottom: 20px
+    box-shadow: inset 0px -5px 15px -5px #0D47A1
+    .cabeceraLogo
+        flex 3
+        text-align: center
+        h1
+            color white
+            font-size: 40px
+            line-height: 32px
+            //text-shadow: 0px 0px 5px #333
+            text-shadow: 1px 0px 0 rgb(238,238,238), 5px 4px 0 rgb(112,112,112)
+            //text-shadow: 1px 2px 0 rgb(255,210,23), 2px 4px 0 rgb(90,199,255), 3px 6px 0 rgb(255,210,23), 4px 7px 0 rgb(90,199,255)
+    .cabeceraMenu
+        flex 9
+        flexbox()
+        justify-content: center
+        align-items: center
+    .menutop
+        flexbox()
+        padding: 0
+        margin: 0
+        align-items: center
+        li
+            list-style: none
+            text-align: center
+            width: 100%
+            a
+                width: auto
+                display: inline-block
+                text-decoration: none
+                color white
+                border-bottom: 4px solid transparent
+                &:hover
+                    color: #FFC107
+                    border-bottom: 4px solid #CDDC39
+.contColumnas
+    flexbox()
+    padding-top: 20px
+    .columnaIzquierda
+        flex 3
+        text-align: center
+        img
+            width: 90%
+    .columnaCentro
+        flex 6
+    .columnaDerecha
+        flex 3
+.fotosPortada
+    padding: 0
+    height: 600px
+    overflow-x: hidden
+    margin-left: 5px
+    margin-right: 5px
+    margin-bottom: 20px
+    li
+        width: 100%
+        list-style: none
+        text-align: center
+        margin-bottom: 10px
+        img
+            width: 95%
+            box-shadow: 0px 0px 5px 0px #333
+            text-align: center
+            border-radius: 2px
+            &:hover
+                width: 100%
+.listRedes
+    flexbox()
+    list-style: none
+    padding: 0
+    justify-content: center
+    li
+        img
+            width: auto
+            margin-right: 5px
+.footer
+    flexbox()
+    padding-bottom: 5px
+    padding-top: 20px
+    padding-left: 10px
+    padding-right: 10px
+    //background: rgb(255, 214, 120)
+    background: #E91E63
+    color: white
+    border-bottom: 1px solid #ccc
+    align-items: center
+    border-radius: 0px 0px 10px 10px
+    p
+        padding-top: 5px
+        padding-bottom: 3px
+    a
+        color #333
+        font-size: 15px
+    .footerIzquierda
+        flex 3
+        text-align: center
+    .footerCentro
+        flex 6
+        text-align: center
+    .footerDerecho
+        flex 3
+        img
+            width: 80%
+        
+/*Generales*/
+.centrar
+    text-align: center
+.subtitulo
+    text-transform: uppercase
+    margin-bottom: 5px
+    padding: 5px
+    box-shadow: 0px 0px 2px 0px #333
+    margin-top: 5px
+    margin-right: 5px
+    margin-left: 5px
+    border-radius: 5px
+            
 //@import 'keyframes'
 //@import 'media'
