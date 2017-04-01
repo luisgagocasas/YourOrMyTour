@@ -37,12 +37,155 @@
           <div class="columnaIzquierda">
             <div id="cont_7f12a8f98675120414eb8f9b064d0d31">
               <script type="text/javascript" async src="https://www.tiempo.com/wid_loader/7f12a8f98675120414eb8f9b064d0d31"></script>
-            </div><a href=""><img src="img/paquete.jpeg"></a><a href=""><img src="img/ofeta_01.jpg"></a><a href="" class="div-img hidden"><img src="img/ofeta_02.jpg" class="img">
+            </div><a href=""><img src="img/paquete.jpeg"></a><a href=""><img src="img/aniversarioperu.jpg"></a><a href="#" class="div-img hidden"><img src="img/aniversarioaqp.jpg" class="img">
               <div class="overlay"></div>
-              <div class="text">¡Te<br>esperamos!</div></a><a href=""><img src="img/ofeta_03.png"></a><a href=""><img src="img/ofeta_04.png"></a>
+              <div class="text">¡Te<br>esperamos!</div></a><a href=""><img src="img/ofeta_03.png"></a>
           </div>
           <div class="columnaCentroCont"><br>
             <h2>Arma tu Paquete</h2><br><br>
+            <div id="parteUno">
+              <div class="miga-paquete">
+                <h4>1) Primera parte</h4>
+              </div>
+              <table class="rwd-table">
+                <tr>
+                  <th colspan="4">HOTELES DISPONIBLES</th>
+                </tr>
+                <tr>
+                  <th>TARIFAS</th>
+                  <th>SIMPLE</th>
+                  <th>DOBLE</th>
+                  <th>TRIPLE</th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Hotel 3 ***</p>
+                    <H3>POSADA DEL MONASTERIO</H3>
+                  </td>
+                  <td>48<a href="#" data-precio="48" data-hotel="posada" class="opcionCheck">« select »</a></td>
+                  <td>57<a href="#" data-precio="57" data-hotel="posada" class="opcionCheck">« select »</a></td>
+                  <td>69<a href="#" data-precio="69" data-hotel="posada" class="opcionCheck">« select »</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Hotel 3 ***</p>
+                    <H3>EL ENSUEÑO</H3>
+                  </td>
+                  <td>38<a href="#" data-precio="38" data-hotel="ensuenio" class="opcionCheck">« select »</a></td>
+                  <td>45<a href="#" data-precio="45" data-hotel="ensuenio" class="opcionCheck">« select »</a></td>
+                  <td>57<a href="#" data-precio="57" data-hotel="ensuenio" class="opcionCheck">« select »</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Hotel 3 ***</p>
+                    <H3>EL FUNDADOR</H3>
+                  </td>
+                  <td>63<a href="#" data-precio="63" data-hotel="fundador" class="opcionCheck">« select »</a></td>
+                  <td>71<a href="#" data-precio="71" data-hotel="fundador" class="opcionCheck">« select »</a></td>
+                  <td>110<a href="#" data-precio="110" data-hotel="fundador" class="opcionCheck">« select »</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Hotel 3 ***</p>
+                    <H3>EL LAGO</H3>
+                  </td>
+                  <td>90<a href="#" data-precio="90" data-hotel="lago" class="opcionCheck">« select »</a></td>
+                  <td>97<a href="#" data-precio="97" data-hotel="lago" class="opcionCheck">« select »</a></td>
+                  <td>---</td>
+                </tr>
+              </table>
+            </div>
+            <div id="parteDos">
+              <div class="miga-paquete">
+                <h4 class="desactive">1) Primera parte</h4><strong class="miga-flecha">> </strong>
+                <h4 class="miga-actual">2) Segunda parte</h4>
+              </div>
+              <table class="rwd-table">
+                <tr>
+                  <th colspan="4">LUGARES TURISTICOS</th>
+                </tr>
+                <tr>
+                  <td>
+                    <H3>MONASTERIO DE SANTA CATALINA</H3>
+                    <p>$ 20</p>
+                  </td>
+                  <td><a href="#" data-lugar="monasterio" data-preciolugar="20" class="opcionCheckLugar">« select »</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <H3>Arequipa Tour Ciudad Blanca</H3>
+                    <p>$ 45</p>
+                  </td>
+                  <td><a href="#" data-lugar="ciudad" data-preciolugar="45" class="opcionCheckLugar">« select »</a></td>
+                </tr>
+              </table>
+            </div>
+            <div id="parteTres">
+              <div class="miga-paquete">
+                <h4 class="desactive">1) Primera parte</h4><strong class="miga-flecha">> </strong>
+                <h4 class="desactive">2) Segunda parte</h4><strong class="miga-flecha">> </strong>
+                <h4 class="miga-actual">3) Final</h4>
+              </div>
+              <div class="paquete-especifico">
+                <form id="paquete" action="paquete-personalizado.php" method="post" style="position: relative;">
+                  <table class="paquete-persona">
+                    <tr>
+                      <td colspan="2" class="centrar">PRECIO POR PERSONA
+                        <select id="personaID" name="personas">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" style="background: #efefef;" class="centrar">DOLAR</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" id="valorDolares" data-dolares="45" style="background: #efefef;" class="centrar">$ 45</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: right;">Nombre:</td>
+                      <td>
+                        <input type="hidden" name="soles" value="S/. 146">
+                        <input type="hidden" name="dolares" value="$ 45">
+                        <input type="text" name="nombre" style="width: 40%;" required>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: right;">Apellido:</td>
+                      <td>
+                        <input type="text" name="apellido" style="width: 40%;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: right;">Correo:</td>
+                      <td>
+                        <input type="email" name="correo" style="width: 40%;" required>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: right;">DNI o Pasaporte:</td>
+                      <td>
+                        <input type="number" name="dni" style="width: 40%;" required>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Enviar">
+                      </td>
+                    </tr>
+                    <div id="mensaje-stado" class="overlay-form">
+                      <div class="form-mensaje-text">Enviando ....</div>
+                    </div>
+                  </table>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

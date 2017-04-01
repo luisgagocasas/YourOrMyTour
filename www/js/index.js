@@ -32,5 +32,14 @@ $(document).ready(function() {
                 $("#mensaje-stado").hide();
             }, 3e3);
         }
+    }), $("#parteUno").show(), $("#parteDos").hide(), $("#parteTres").hide();
+    var precioHotel = 0, precioLugar = 0, PrecioFinal = 0;
+    $(".opcionCheck").on("click", function() {
+        $("#parteUno").hide(), $("#parteDos").show(), $("#parteTres").hide(), precioHotel = $(this).attr("data-precio"), 
+        console.log(precioHotel);
+    }), $(".opcionCheckLugar").on("click", function() {
+        precioLugar = $(this).attr("data-preciolugar"), PrecioFinal = parseInt(precioLugar) + parseInt(precioHotel), 
+        $("#valorDolares").attr("data-dolares", PrecioFinal), $("#valorDolares").text("$ " + PrecioFinal), 
+        $("#parteUno").hide(), $("#parteDos").hide(), $("#parteTres").show(), console.log(precioHotel);
     });
 });
