@@ -1,0 +1,82 @@
+extends componentes/_base.jade
+block titulo
+  title Paquetes CALETA SAN JOSE - Your Or My Tour
+block head
+block contenido
+  .contColumnas
+    .columnaIzquierda
+      include componentes/_ofertas
+    .columnaCentroCont
+      br
+      h2.miga
+        a(href="paquetes.html") Paquetes
+        strong.miga-flecha > 
+        .miga-actual CALETA SAN JOSE - AREQUIPA
+      br
+      br
+      .paquete-especifico
+        table
+          tr
+            th CONCEPTO
+          tr
+            td
+              p » Las tarifas de alojamiento incluyen alimentación completa, navegación desde el puerto de Quilca, actividad de treking "El Ancla", visita a la Isla Lobera, uso de Kayaks en la caleta, Pesca y habitación con vista al mar.
+              p » Niños de 0 a 2 años no pagan, de 3 a 6 tienen 20% de descuento.
+              p » Programa Básico 3 días 2 noches por persona
+        br
+        br
+        ul.paquete-foto.centrar
+          li
+            img(src="img/calaetasanjose.jpg")
+          li
+            img(src="img/caletasanjose2.jpg")
+          li
+            img(src="img/caletasanjose3.jpg")
+        br
+        br
+        form(id="paquete", action="paquete-personalizado.php", method="post", style="position: relative;")
+          table.paquete-persona
+            tr
+              td.centrar(colspan="2")
+                | PRECIO POR PERSONA
+                select#personaID(name="personas")
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+                  option(value="7") 7
+            tr
+              td.centrar DOLAR
+              td.centrar SOLES
+            tr
+              td.centrar#valorDolares(data-dolares="45") $ 45
+              td.centrar#valorSoles(data-soles="146") S/. 146
+            tr
+              td(style="text-align: right;") Nombre:
+              td
+                input(type="hidden", name="soles", value="S/. 146")
+                input(type="hidden", name="dolares", value="$ 45")
+                input(type="text", name="nombre", style="width: 40%;", required)
+            tr
+              td(style="text-align: right;") Apellido:
+              td
+                input(type="text", name="apellido", style="width: 40%;")
+            tr
+              td(style="text-align: right;") Correo:
+              td
+                input(type="email", name="correo", style="width: 40%;", required)
+            tr
+              td(style="text-align: right;") DNI o Pasaporte:
+              td
+                input(type="number", name="dni", style="width: 40%;", required)
+            tr
+              td(colspan="2", style="text-align: center;")
+                input(type="submit", value="Enviar")
+            .overlay-form#mensaje-stado
+              .form-mensaje-text Enviando ....
+        br
+        br
+          
+          

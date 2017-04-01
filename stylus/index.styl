@@ -328,6 +328,7 @@ h1
         flex 3
     .columnaCentroCont
         flex 9
+        position: relative;
         p
             line-height: 30px
         li
@@ -399,7 +400,31 @@ h1
     background-size:  cover
     color: rgba(71, 121, 94, .9)
 #yanahuara::after
-    content: 'Mirador de Yanahuara';
+    content: 'Mirador de Yanahuara'
+#toromuerto
+    background-image: url(../img/toromuerto1.jpg)
+    background-position: center center
+    background-repeat:  no-repeat
+    background-size:  cover
+    color: rgba(255, 87, 34, 0.9)
+#toromuerto::after
+    content: 'Toro Muerto'
+#colca
+    background-image: url(../img/colca.jpg)
+    background-position: center center
+    background-repeat:  no-repeat
+    background-size:  cover
+    color: rgba(3, 169, 244, 0.9)
+#colca::after
+    content: 'Colca'
+#volcanmisti
+    background-image: url(../img/volcanmisti.jpg)
+    background-position: center center
+    background-repeat:  no-repeat
+    background-size:  cover
+    color: rgba(63, 81, 181, 0.9)
+#volcanmisti::after
+    content: 'Volcan Misti'
 //Efectos
 .div-img1
     display: block
@@ -512,19 +537,6 @@ h1
         padding: 5px
         border-radius: 5px
         border: 1px solid #ccc
-    .form-mensaje-text
-        width: 20%
-        height: 10%
-        position: absolute
-        left: 0
-        right: 0
-        margin: auto
-        top: 0
-        bottom: 0
-        text-align: center
-        color: white
-        text-shadow: 0px 0px 3px #333
-        font-size: 1.5em
 
 #mensaje-stado
     display: none
@@ -541,6 +553,99 @@ h1
     -moz-transition: opacity 1s ease-in-out
     -ms-transition: opacity 1s ease-in-out
     -o-transition:opacity 1s ease-in-out
+    .form-mensaje-text
+        width: 20%
+        height: 10%
+        position: absolute
+        left: 0
+        right: 0
+        margin: auto
+        top: 0
+        bottom: 0
+        text-align: center
+        color: white
+        text-shadow: 0px 0px 3px #333
+        font-size: 1.5em
+//Galeria fotos
+.gallery {
+    nav {
+        padding: 20px;
+        z-index: 20;
+        top: 0px;
+        background: #fff;
+        position: relative;
+        ul {
+            padding: 0px;
+            li {
+                width: 140px;
+                display: inline-block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    nav li {
+        display: inline;
+        padding-right: 1em;
+    }
+
+    aside {
+        clear: both;
+        padding-top: 30px;
+
+    }
+    aside  a {
+        position: relative;
+        color: #369;
+    }
+    aside li {
+        padding-bottom: 0.5em;
+    }
+
+}
+.gallery {
+    height: 280px;
+    overflow: hidden;
+}
+.target {
+    position: absolute;
+    width: 96%;
+    padding-top: 135px;
+}
+.target figure img{
+    position: relative;
+    border-radius: 20px 0 20px 0;
+    padding: 0px;
+    width: 85%;
+}
+
+.gallery .target {
+    opacity: 0;
+    top: 60px;
+    left: 20px;
+    -webkit-transform: scale( 0, 0 );
+    -moz-transform: scale( 0, 0 );
+    -ms-transform: scale( 0, 0 );
+    -o-transform: scale( 0, 0 );
+    transform: scale( 0, 0 );
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.gallery .target:target {
+    opacity: 1;
+    top: 20%;
+    left: 10%;
+    -webkit-transform: scale( 1, 1 );
+    -moz-transform: scale( 1, 1 );
+    -ms-transform: scale( 1, 1 );
+    -o-transform: scale( 1, 1 );
+    transform: scale( 1, 1 );
+}
 .listRedes
     flexbox()
     list-style: none
