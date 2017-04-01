@@ -19,4 +19,12 @@ $(document).ready(function(){
     $("#enviarForm").on( "click", function() {
         $("#mensaje-stado").show();
     });
+    $("#personaID").on( "change", function() {
+        var cantidad = $("#personaID").val();
+        var dolares = $("#valorDolares").attr("data-dolares");
+        var soles = $("#valorSoles").attr("data-soles");
+        $("#valorDolares").text("$" + cantidad * dolares);
+        $("#valorSoles").text("S/. " + cantidad * soles);
+        
+    });
 });

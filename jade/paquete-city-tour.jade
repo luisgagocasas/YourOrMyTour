@@ -1,0 +1,101 @@
+extends componentes/_base.jade
+block titulo
+  title Paquetes - Your Or My Tour
+block head
+block contenido
+  .contColumnas
+    .columnaIzquierda
+      include componentes/_ofertas
+    .columnaCentroCont
+      br
+      h2.miga
+        a(href="paquetes.html") Paquetes
+        strong.miga-flecha > 
+        .miga-actual CITY TOUR - AREQUIPA
+      br
+      br
+      .paquete-especifico
+        table
+          tr
+            th PRIMER DIA
+          tr
+            td
+              p » Recepción y Traslado al hotel.
+              p » Luego de un descanso iniciaremos el recorrido por la ciudad Blanca de Arequipa, comenzaremos visitando la Plaza de Armas, la cual presenta una hermosa fuente de bronce de tres platos coronados con la figura de un soldado del siglo XVI.
+              p » Aquí podremos apreciar las iglesias y claustros de la Compañía de Jesús.
+              p » A continuación visitaremos el Monasterio de Santa Catalina el cual fue un centro de clausura absoluta el cual se mantuvo cerrado por siglos al público, hoy armoniosamente restaurado y abierto nos permite apreciar lo que fue la ciudad de Arequipa en el siglo XVII, veremos sus calles, jardines, claustros, rústicos lavaderos de Piedra , murallas de sillar, y su pinacoteca.
+              p » Retorno al Hotel.
+              p » Pernocte.
+        br
+        br
+        table
+          tr
+            th SEGUNDO  DIA (AREQUIPA-CHIVAY)
+          tr
+            td
+              p » Desayuno en el hotel.
+              p » Temprano por la mañana saldremos al Valle del Colca ubicado en la Provincia de Caylloma a 3 600msnm en la ruta pasaremos por el distrito de Yura, Pampa Cañahua, un lugar donde se pueden apreciar las vicuñas, pasaremos por el que fue el crater del colvan Chucure.
+              p » Asimismo, llegaremos a Patapampa, el punto mas alto (4 800msnm) desde este punto se aprecia la mayor cantidad de volcanes que existen en el departamento de Arequipa.
+              p » Llegaremos al pueblo de Chivay y nos instalaremos en el hotel.
+              p » Luego tendremos un tiempo para poder almorzar.
+              p » A hora oportuna visitaremos los baños termales de la Calera (opcional).
+              p » Pernocte en Hotel.
+        br
+        br
+        table
+          tr
+            th TERCER  DIA (CRUZ DEL CONDOR)
+          tr
+            td
+              p » Desayuno en el Hotel.
+              p » De inmediato saldremos para visitar la Cruz del Cóndor, lugar con una impresionante vista del valle y desde donde podremos apreciar el vuelo de los cóndores y la profundidad del cañón (3 400metros de profundidad).
+              p » De regreso podremos visitar el pueblo de Pinchillo, Las Tumbas Colgantes Pre-Incas, Litomoquetas, el pueblo de Maca, Achola, el pueblo de Yanque y Chivay.
+              p » Almuerzo en restaurante de Chivay (almuerzo por cuenta del pax).
+              p » Retorno a la ciudad de Arequipa.
+              p » Pernocte.
+        br
+        br
+        table
+          tr
+            th CUARTO  DIA (AREQUIPA - SALIDA)
+          tr
+            td
+              p » Desayuno.
+              p » Mañana Libre para poder realizar compras, souvenirs, etc.
+              p » A hora oportuna traslado a la estación/aeropuerto para retorno a ciudad de origen.
+              
+        br
+        br
+        ul.paquete-foto.centrar
+          li
+            img(src="img/citytour.jpg")
+          li
+            img(src="img/citytour2.jpg")
+        br
+        br
+        table.paquete-persona
+          tr
+            td.centrar(colspan="2")
+              | PRECIO POR PERSONA
+              select#personaID
+                option(value="1") 1
+                option(value="2") 2
+                option(value="3") 3
+                option(value="4") 4
+                option(value="5") 5
+                option(value="6") 6
+                option(value="7") 7
+          tr
+            td.centrar DOLAR
+            td.centrar SOLES
+          tr
+            td.centrar#valorDolares(data-dolares="45") $ 45
+            td.centrar#valorSoles(data-soles="146") S/. 146
+        br
+        br
+              
+              
+          
+          
+          
+          

@@ -9,5 +9,8 @@ $(document).ready(function() {
         }, 3e3);
     }), $("#enviarForm").on("click", function() {
         $("#mensaje-stado").show();
+    }), $("#personaID").on("change", function() {
+        var cantidad = $("#personaID").val(), dolares = $("#valorDolares").attr("data-dolares"), soles = $("#valorSoles").attr("data-soles");
+        $("#valorDolares").text("$" + cantidad * dolares), $("#valorSoles").text("S/. " + cantidad * soles);
     });
 });
