@@ -1,0 +1,31 @@
+extends componentes/_base.jade
+block titulo
+  title Escríbenos - Your Or My Tour
+block head
+block contenido
+  .contColumnas
+    .columnaIzquierda
+      include componentes/_ofertas
+    .columnaCentroCont
+      br
+      h2 Escríbenos
+      br
+      br
+      form(id="escribenos", class="escribenosForm", action="enviar.php", method="post")
+        .overlay-form#mensaje-stado
+          .form-mensaje-text Enviando ....
+        div.parrent
+          label(id="nombre_form") Nombre:
+          input(type="text", name="nombre", required)
+        div.parrent
+          label(id="nombre_form") Apellido:
+          input(type="text", name="apellido")
+        div.parrent
+          label(id="nombre_form") Correo:
+          input(type="email", name="correo", required)
+        div.parrent
+          label(id="nombre_form") Comentario:
+          textarea(name="comentario", cols="30", rows="10", required)
+        div.parrent
+          center
+            input(type="submit", id="enviarForm", value="Enviar")

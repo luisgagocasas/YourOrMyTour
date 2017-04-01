@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta name="description" content="">
-    <title>Sucursales - Your Or My Tour</title>
+    <title>Escríbenos - Your Or My Tour</title>
     <link href="//fonts.googleapis.com/css?family=Macondo|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <script src="//code.jquery.com/jquery-3.2.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.1/jquery.form.min.js"></script>
   </head>
   <body>
     <div class="page">
@@ -24,8 +26,8 @@
               <li><a href="paquetes.html">PAQUETES</a></li>
               <li><a href="destinos.html">DESTINOS</a></li>
               <li><a href="arma-tu-paquete.html">ARMA TU PAQUETE</a></li>
-              <li><a href="sucursales.html">SUCURSALES</a></li>
               <li><a href="galeria.html">GALERÍA</a></li>
+              <li><a href="escribenos.html">¡ESCRÍBENOS!</a></li>
             </ul>
           </nav>
         </div>
@@ -36,7 +38,33 @@
               <div class="overlay"></div>
               <div class="text">¡Te<br>esperamos!</div></a><a href=""><img src="img/ofeta_03.png"></a><a href=""><img src="img/ofeta_04.png"></a></div>
           <div class="columnaCentroCont"><br>
-            <h2>Sucursales</h2><br><br>
+            <h2>Escríbenos</h2><br><br>
+            <form id="escribenos" action="enviar.php" method="post" class="escribenosForm">
+              <div id="mensaje-stado" class="overlay-form">
+                <div class="form-mensaje-text">Enviando ....</div>
+              </div>
+              <div class="parrent">
+                <label id="nombre_form">Nombre:</label>
+                <input type="text" name="nombre" required>
+              </div>
+              <div class="parrent">
+                <label id="nombre_form">Apellido:</label>
+                <input type="text" name="apellido">
+              </div>
+              <div class="parrent">
+                <label id="nombre_form">Correo:</label>
+                <input type="email" name="correo" required>
+              </div>
+              <div class="parrent">
+                <label id="nombre_form">Comentario:</label>
+                <textarea name="comentario" cols="30" rows="10" required></textarea>
+              </div>
+              <div class="parrent">
+                <center>
+                  <input type="submit" id="enviarForm" value="Enviar">
+                </center>
+              </div>
+            </form>
           </div>
         </div>
       </div>
